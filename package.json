@@ -1,0 +1,20 @@
+{
+  "name": "com.v3gs.shaderstrippinghelper",
+  "version": "0.5.0",
+  "displayName": "Shader Stripping Helper",
+  "description": "This package is in charge of providing functionalities for stripping shaders and generate shader variants.\nThis package is built on top of the IPreprocessShaders interface.",
+  "unity": "2021.3",
+  "keywords": [
+    "Shader stripping",
+    "Keywords",
+    "Stripping scriptable",
+    "Shader variant",
+    "Shader keyword",
+    "multi_compile",
+    "shader_feature",
+    "IPreprocessShaders"
+  ],
+  "author": {
+    "name": "V3GS (Victor Riascos)"
+  }
+}

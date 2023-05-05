@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" ue="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.v3gs.shaderstrippinghelper/Resources/UI/Editor/ShaderStripping_EditorStyle.uss?fileID=7433441132597879392&amp;guid=0979ca65b5cbb10449da3aee7da3122f&amp;type=3#ShaderStripping_EditorStyle" />
+    <ui:Label text="Stripping Shaders Settings" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 20px; padding-bottom: 10px;" />
+    <ui:ListView virtualization-method="DynamicHeight" reorder-mode="Animated" binding-path="m_StrippingInfo" show-add-remove-footer="false" show-border="true" show-foldout-header="false" header-title="Shader stripping options" show-bound-collection-size="false" focusable="true" style="margin-bottom: 0; padding-bottom: 10px;" />
+    <ui:Foldout text="Report options" value="true" style="margin-bottom: 0; padding-bottom: 10px;">
+        <ui:Toggle binding-path="m_GenerateReport" label="Generate Shader Stripping Report" class="toggle-option" />
+        <ui:TextField picking-mode="Ignore" label="Report path" text="Reports/" binding-path="m_ReportPath" style="flex-direction: row; flex-wrap: wrap;" />
+        <ui:TextField picking-mode="Ignore" label="Report file name" text="ShaderBuildReport" binding-path="m_ReportFileName" style="flex-direction: row; flex-wrap: wrap;" />
+    </ui:Foldout>
+    <ui:Foldout text="Shader variant options" style="margin-bottom: 0; padding-bottom: 10px;">
+        <ui:Toggle binding-path="m_GenerateShaderVariantCollection" focusable="true" value="false" label="Generate Shader Variant Collection" name="Toggle" style="right: auto;" />
+        <ui:TextField picking-mode="Ignore" label="Shader variant path" text="ShaderVariants/" binding-path="m_ShaderVariantPath" style="flex-direction: row; flex-wrap: wrap;" />
+        <ui:TextField picking-mode="Ignore" label="Shader variant name" text="ShaderVariantFromBuild" binding-path="m_ShaderVariantName" style="flex-direction: row; flex-wrap: wrap;" />
+    </ui:Foldout>
+    <ui:Toggle label="Use date time for naming files" binding-path="m_UseDateTimeForNaming" />
+</ui:UXML>
